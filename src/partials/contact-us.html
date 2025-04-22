@@ -1,78 +1,80 @@
-  <section class="contact-us" id="contact-us">
-    <div class="container">
-      <h2 class="title">Contact Us</h2>
-      <div class="contact-us-content">
-        <div class="contact-us-wrap">
-          <p class="contact-us-text">
-            Please use the form below to contact us. Enter your name, email,
-            phone, and message and we'll get back to you shortly.
-          </p>
-          <form class="contact-us-form" name="contacts" autocomplete="on">
-            <input
-              class="contact-us-input"
-              type="text"
-              name="user_name"
-              minlength="2"
-              pattern="[a-zA-Z]+"
-              title="Pavlo"
-              placeholder="Name"
-              required
-            />
-            <input
-              class="contact-us-input"
-              type="email"
-              name="user_email"
-              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-              title="email@gmail.com"
-              placeholder="Email"
-              required
-            />
-            <input
-              class="contact-us-input"
-              type="tel"
-              name="user_tel"
-              pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-              title="(+380-XX-XXX-XX-XX)"
-              placeholder="+380"
-              required
-            />
-            <textarea
-              class="contact-us-com"
-              name="user_comment"
-              placeholder="Comment"
-            ></textarea>
-            <button class="contact-us-btn" type="submit">Send</button>
-          </form>
-        </div>
-        <div class="contact-us-img">
-          <picture>
-            <source
-              srcset="
-                ./img/contact-us/contact-us.jpg    1x,
-                ./img/contact-us/contact-us@2x.jpg 2x
-              "
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./img/contact-us/contact-us-tablet.jpg    1x,
-                ./img/contact-us/contact-us-tablet@2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <source
-              srcset="
-                ./img/contact-us/contact-us-mob.jpg    1x,
-                ./img/contact-us/contact-us-mob@2x.jpg 2x
-              "
-              media="(max-width: 767px)"
-            />
-            <img
-              src="./img/contact-us/contact-us-tablet.jpg"
-              alt="Watch on the stone"
-            />
-          </picture>
-        </div>
+<section class="contact-us" id="contact-us">
+  <div class="container">
+    <h2 class="title">Contact Us</h2>
+    <div class="contact-us-content">
+      <div class="contact-us-wrap">
+        <p class="contact-us-text">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form class="contact-us-form" name="contacts" autocomplete="on">
+          <input
+            class="contact-us-input"
+            type="text"
+            name="user_name"
+            minlength="2"
+            pattern="[a-zA-Z]+"
+            title="Pavlo"
+            placeholder="Name"
+            required
+          />
+          <input
+            class="contact-us-input"
+            type="email"
+            name="user_email"
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            title="email@gmail.com"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="contact-us-input"
+            type="tel"
+            name="user_tel"
+            pattern="[0-9+()-\s]*"
+            title="(+380XXXXXXXXX)"
+            placeholder="+380"
+            inputmode="numeric"
+            required
+            oninput="this.value = this.value.replace(/[^0-9+\-]/g, '')"
+          />
+          <textarea
+            class="contact-us-com"
+            name="user_comment"
+            placeholder="Comment"
+          ></textarea>
+          <button class="contact-us-btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="contact-us-img">
+        <picture>
+          <source
+            srcset="
+              ./img/contact-us/contact-us.jpg    1x,
+              ./img/contact-us/contact-us@2x.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ./img/contact-us/contact-us-tablet.jpg    1x,
+              ./img/contact-us/contact-us-tablet@2x.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ./img/contact-us/contact-us-mob.jpg    1x,
+              ./img/contact-us/contact-us-mob@2x.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            src="./img/contact-us/contact-us-tablet.jpg"
+            alt="Watch on the stone"
+          />
+        </picture>
       </div>
     </div>
-  </section>
+  </div>
+</section>
